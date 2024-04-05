@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[left=0.5in,top=0.6in,right=0.5in,bottom=0.6in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Jasper Geer} % Your name
+\address{
+  \href{mailto:jasper.geer@gmail.com}{\textbf{jasper.geer@gmail.com}}
+  \\
+  \href{https://www.jaspergeer.com}{\textbf{www.jaspergeer.com}}}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+%--copy and paste this region  if you need more--
+{\bf Tufts University} \hfill {\em 2020-2024 (Expected)} 
+\\ {\it Medford, MA} \hfill { Major GPA: 3.89 }
+\\ Computer Science Major \hfill { GPA: 3.86 }
+\begin{itemize}
+    \item Coursework: Compilers, Virtual Machines and Language Translation, Programming Languages, Graph Theory, Advanced Topics in Computer Architecture, Internet-Scale Distributed Systems, Operating Systems 
+    \item Activities: Tufts Chinese Students' Association Event Chair 2022-23
+\end{itemize}
+{\bf Mercer Island High School} \hfill {\em 2016-2020} 
+\\ {\it Mercer Island, WA}
+%--copy and paste this region  if you need more--
+
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Research Experiences}
+%--copy and paste this region  if you need more--
+{\bf Tufts Programming Languages (TuPL)}{, Tufts University} \hfill {\em September 2023 - Present}\\
+{\it Research Assistant}
+\begin{itemize}
+    \item Conducted program synthesis research under Professor Jeff Foster.
+    \item Worked on the implementation of a novel constraint-guided Java program synthesis technique.
+\end{itemize}
+{\bf Tufts Security and Privacy Lab}{, Tufts University} \hfill {\em September 2023 - Present}\\
+{\it Research Assistant}
+\begin{itemize}
+    \item Assisted in a review of recent symbolic execution literature under Professor Dan Votipka.
+    \item Qualitatively coded rounds of 5-10 research papers and contributed to codebook development.
+\end{itemize}
+%--copy and paste this region  if you need more--
+\end{rSection}
+
+
+\begin{rSection}{Professional Experiences}
+{\bf Tesla} \hfill {\em May 2023 - August 2023}\\
+\hfill {\it Vehicle Software Intern}
+\begin{itemize}
+    \item End-to-end feature development in Haskell for an incremental compiler frontend.
+    \item Refactored compiler passes into incremental build rules for a monadic build system.
+    \item Created embedded domain-specific languages to implement new language server features.
+    \item Received offer for full-time conversion.
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Teaching}
+{\bf Tufts University, Course Assistant} \hfill {\em September 2022 - Present}
+\begin{itemize}
+    \item CS170, Computation Theory. {\it Fall 2022.}
+    \item CS170, Computation Theory. {\it Spring 2023.}
+    \item CS170, Computation Theory. {\it Fall 2023.}
+\end{itemize}
+
+{\bf Coding With Kids} \hfill {\em May 2022 - September 2022}
+\begin{itemize}
+    \item Taught week-long programming classes for middle and elementary school students.
+\end{itemize}
+
+{\bf The Summit at Snoqualmie} \hfill {\em Nov 2018 - March 2021}
+\begin{itemize}
+    \item Taught 8-week long nordic skiing youth programs.
+\end{itemize}
+    
+\end{rSection}
+
+\begin{rSection}{Awards}
+    \begin{itemize}
+        \item Travel Award: Programming Languages Mentoring Workshop (PLMW) at International Conference on Functional Programming (ICFP) 2023
+    \end{itemize}
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    PROJECTS
+%-----------------------------------------------------------------------------------------------
+\begin{rSection}{Projects}
+%--copy and paste this region  if you need more--
+{\bf Compost}
+\begin{itemize}
+    \item LLVM frontend for a statically-typed functional programming language.
+    \item Designed an affine type system to enforce memory safety without runtime garbage collection.
+    \item Began as a personal summer project, completed as a semester-long group project in a compilers class.
+    \item Written in OCaml.
+\end{itemize}
+% {\bf Odin (Contributor)}\\
+% - Contributed to an open source compiler for the Odin programming language \\
+% - Addressed issues in the type checker and code generator \\
+{\bf tinyvalidator} 
+\begin{itemize}
+    \item Artifact produced for directed study with Professor Jeff Foster.
+    \item Translation validation for a C-subset language by means of symbolic execution.
+    \item Devised a big-step operational semantics to describe the execution of programs with symbolic inputs.
+    \item Written in Haskell using the Z3 SMT solver.
+\end{itemize}
+{\bf Odin } \\
+{\it Contributor}
+\begin{itemize}
+    \item Contributed bug fixes to the open-source compiler for the Odin programming language.
+    \item Addressed fatal type checker errors that occurred for certain well-typed programs.
+    \item Diagnosed and fixed code generation bugs triggered by casts and non-native endianness.
+\end{itemize}
+% {\bf jumcc} \\
+% - Compiler from C subset targeting small virtual assembly language \\
+% - Pointers, arrays, functions, structured control flow, and header files \\
+% - Written in Haskell
+%--copy and paste this region  if you need more--
+\end{rSection}
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Programming Background}
+\begin{itemize}
+    \item Recent Experience with Haskell, OCaml, Scala, Agda, and C.
+    \item Some experience with SML, Scheme, C++, Typescript, Python, and Java.
+\end{itemize}
+\end{rSection}
+
+% \begin{rSection}{Awards and Scholarships} 
+% {\bf Dean's List}{, Tufts University
+% } \hfill{\em Fall 2020, Spring/Fall 2021, Spring 2022, Spring 2023}
+
+% \end{rSection}
+
+\end{document}----------------------------
+
