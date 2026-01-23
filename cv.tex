@@ -36,47 +36,65 @@
 {\bf University of British Columbia} \hfill {\em 2024-Present}
 \\ {\it Vancouver, British Columbia, Canada}
 \\ Computer Science, PhD
+\\ Supervised by Prof. Alexander J. Summers
+
 \begin{itemize}
-    \item Supervised by Dr. Alexander J. Summers
+    \item Research in Programming Languages and Formal Verification in the UBC Software Practices Lab.
+    \item Primarily interested in Rust verification, separation logic, and type systems.
+    \item Contributor to Prusti, a Rust verifier developed in collaboration with ETH Zurich.
 \end{itemize}
+
 %--copy and paste this region  if you need more--
 {\bf Tufts University} \hfill {\em 2020-2024}
 \\ {\it Medford, Massachussets, USA}
 \\ Computer Science, BS
 \\ \textit{summa cum laude}
-\begin{itemize}
-    % \item Coursework: Compilers, Virtual Machines and Language Translation, Programming Languages, Graph Theory, Advanced Topics in Computer Architecture, Internet-Scale Distributed Systems, Operating Systems
-    \item Activities: TuPL Reading Group, Tufts Chinese Students' Association Event Chair 2022-23
-\end{itemize}
-%--copy and paste this region  if you need more--
-{\bf Mercer Island High School} \hfill {\em 2016-2020} 
-\\ {\it Mercer Island, Washington, USA}
-
 \end{rSection}
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Research Experiences}
 %--copy and paste this region  if you need more--
-{\bf Tufts Programming Languages (TuPL)}{, Tufts University} \hfill {\em September 2023 - Present}\\
-{\it Research Assistant}
+{\bf Verifying Safe Clients of Interior Mutability} \hfill {\em August 2025 - Present}\\
+with Alexander J. Summers\\
+{\it University of British Columbia}
 \begin{itemize}
-    \item Conducted program synthesis research under Professor Jeff Foster.
-    \item Worked on the implementation of a novel constraint-guided Java program synthesis technique.
+    \item Developing formal underpinnings in separation logic for a verification methodology for safe clients of interior-mutable modules in Rust.
+    \item Exploring extensions to the specification language and proof technique to support a wider range of use cases.
 \end{itemize}
-{\bf Tufts Security and Privacy Lab}{, Tufts University} \hfill {\em September 2023 - May 2024}\\
-{\it Research Assistant}
+
+{\bf Place Capability Graphs} \hfill {\em January 2025 - 2025}\\
+with Alexander J. Summers\\
+{\it University of British Columbia}
 \begin{itemize}
-    \item Assisted in a review of recent symbolic execution literature under Professor Dan Votipka.
+  \item Developed a MIR-level mutation testing tool for the Rust compiler to evaluate the trustworthiness of Place Capabilitiy Graphs, a model of Rust's type checking results.
+  \item Co-author on paper published in OOPSLA 2025.
+\end{itemize}
+
+{\bf Type- and Name-Guided Program Synthesis} \hfill {\em September 2023 - September 2025}\\
+with Jeffrey Foster \\
+{\it Tufts University}
+\begin{itemize}
+    \item Implemented and formalized a subtyping constraint-guided program synthesis technique for Java programs.
+    \item Developed search heuristics to make a larger class of synthesis problems tractable.
+\end{itemize}
+
+{\bf Technical Limitations and Novel Use Cases for Symbolic Execution} \hfill {\em September 2023 - May 2024}\\
+with Daniel Votipka\\
+{\it Tufts University}
+
+\begin{itemize}
+    \item Participated in an extensive review of recent symbolic execution and automated testing literature.
     \item Qualitatively coded rounds of 5-10 research papers and contributed to codebook development.
 \end{itemize}
 %--copy and paste this region  if you need more--
 \end{rSection}
 
+\newpage
 
 \begin{rSection}{Professional Experiences}
-{\bf Tesla} \hfill {\em May 2023 - August 2023}\\
-\hfill {\it Vehicle Software Intern}
+{\bf Vehicle Software Intern} \hfill {\em May 2023 - August 2023}\\
+\hfill {\it Tesla}
 \begin{itemize}
     \item End-to-end feature development in Haskell for an incremental compiler frontend.
     \item Refactored compiler passes into incremental build rules for a monadic build system.
@@ -99,21 +117,20 @@
 
 {\bf Tufts University, Course Assistant} \hfill {\em September 2022 - December 2023}
 \begin{itemize}
-    \item CS170, Computation Theory. {\it Fall 2022.}
-    \item CS170, Computation Theory. {\it Spring 2023.}
-    \item CS170, Computation Theory. {\it Fall 2023.}
+    \item CS170, Computation Theory. {\it Fall 2022, Spring 2023, Fall 2023.}
 \end{itemize}
 
 {\bf Coding With Kids} \hfill {\em May 2022 - September 2022}
 \begin{itemize}
-    \item Taught week-long programming classes for middle and elementary school students.
-\end{itemize}
-
-{\bf The Summit at Snoqualmie} \hfill {\em Nov 2018 - March 2021}
-\begin{itemize}
-    \item Taught 8-week long nordic skiing youth programs.
+    \item Taught week-long programming classes for primary and secondary school students.
 \end{itemize}
     
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    PUBLICATIONS -----------------------------------------------------------------------------------------------
+\begin{rSection}{Publications} 
+  Zachary Grannan, Aurel Bílý, Jonáš Fiala, \textbf{Jasper Geer}, Markus de Medeiros, Peter Müller, and Alexander J. Summers. 2025. \emph{Place Capability Graphs: A General-Purpose Model of Rust’s Ownership and Borrowing Guarantees}. Proc. ACM Program. Lang. 9, OOPSLA2, Article 344 (October 2025), 28 pages. https://doi.org/10.1145/3763122
 \end{rSection}
 
 %--------------------------------------------------------------------------------
@@ -126,44 +143,54 @@
 \end{rSection}
 
 %--------------------------------------------------------------------------------
-%    PROJECTS
+%    SERVICE
 %-----------------------------------------------------------------------------------------------
-\begin{rSection}{Projects}
-%--copy and paste this region  if you need more--
-{\bf miniVerifier}
-\begin{itemize}
-    \item Symbolic-execution based verifier for a small programming language with Hoare-logic specifications.
-    \item Written in Haskell and produces SMT-LIBv2 scripts.
-\end{itemize}
-{\bf Compost}
-\begin{itemize}
-    \item LLVM frontend for a statically-typed functional programming language.
-    \item Designed an affine type system to enforce memory safety without runtime garbage collection.
-    \item Began as a personal summer project, completed as a semester-long group project in a compilers class.
-    \item Written in OCaml.
-\end{itemize}
-% {\bf Odin (Contributor)}\\
-% - Contributed to an open source compiler for the Odin programming language \\
-% - Addressed issues in the type checker and code generator \\
-{\bf tinyValidator}
-\begin{itemize}
-    \item Translation validator for a C-subset language by means of symbolic execution.
-    \item Devised a big-step operational semantics to describe the execution of programs with symbolic inputs.
-    \item Written in Haskell and uses the Z3 SMT solver.
-\end{itemize}
-% {\bf jumcc} \\
-% - Compiler from C subset targeting small virtual assembly language \\
-% - Pointers, arrays, functions, structured control flow, and header files \\
-% - Written in Haskell
-%--copy and paste this region  if you need more--
+\begin{rSection}{Service} 
+{\bf Reviewer}{, UBC Computer Science Student Research Conference}\hfill{\em January 2026}\\
+{\bf VP Social}{, UBC Computer Science Graduate Student Association}\hfill{\em May 2025 - April 2026}\\
+{\bf Tuesday Tea Organizer}{, UBC Computer Science Graduate Student Association}\hfill{\em May 2025 - April 2026}\\
+{\bf PL Reading Group Organizer}{, UBC Software Practices Lab}\hfill{\em September 2024 - Present}
+
 \end{rSection}
+
+% %--------------------------------------------------------------------------------
+% %    PROJECTS
+% %-----------------------------------------------------------------------------------------------
+% \begin{rSection}{Projects}
+% %--copy and paste this region  if you need more--
+% {\bf miniVerifier}
+% \begin{itemize}
+%     \item Symbolic-execution based verifier for a small programming language with Hoare-logic specifications.
+%     \item Written in Haskell and produces SMT-LIBv2 scripts.
+% \end{itemize}
+% {\bf Compost}
+% \begin{itemize}
+%     \item LLVM frontend for a statically-typed functional programming language.
+%     \item Designed an affine type system to enforce memory safety without runtime garbage collection.
+%     \item Began as a personal summer project, completed as a semester-long group project in a compilers class.
+%     \item Written in OCaml.
+% \end{itemize}
+% % {\bf Odin (Contributor)}\\
+% % - Contributed to an open source compiler for the Odin programming language \\
+% % - Addressed issues in the type checker and code generator \\
+% {\bf tinyValidator}
+% \begin{itemize}
+%     \item Translation validator for a C-subset language by means of symbolic execution.
+%     \item Devised a big-step operational semantics to describe the execution of programs with symbolic inputs.
+%     \item Written in Haskell and uses the Z3 SMT solver.
+% \end{itemize}
+% % {\bf jumcc} \\
+% % - Compiler from C subset targeting small virtual assembly language \\
+% % - Pointers, arrays, functions, structured control flow, and header files \\
+% % - Written in Haskell
+% %--copy and paste this region  if you need more--
+% \end{rSection}
 %----------------------------------------------------------------------------------------
 %	SKILLS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Programming Background}
-\begin{itemize}
-    \item Recent Experience with Haskell, Scala, and Rust.
-    \item Some experience with OCaml, SML, Racket, C, Typescript, Python, and Java.
+Recent experience with Rust and Scala.\\
+Previous experience with OCaml, Standard ML, Haskell, Racket, C, and Java.
 \end{itemize}
 \end{rSection}
 
