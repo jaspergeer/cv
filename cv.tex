@@ -25,6 +25,13 @@
 \usepackage{enumitem}
 \setlist[itemize]{noitemsep}
 
+\hypersetup{
+    colorlinks=true,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
 \begin{document}
 
 %----------------------------------------------------------------------------------------
@@ -59,7 +66,7 @@
 with Alexander J. Summers\\
 {\it University of British Columbia}
 \begin{itemize}
-    \item Developing formal underpinnings in separation logic for a verification methodology for safe clients of interior-mutable modules in Rust.
+    \item Developing formal underpinnings and a soundness proof in separation logic for a verification methodology for safe clients of interior-mutable modules in Rust.
     \item Exploring extensions to the specification language and proof technique to support a wider range of use cases.
 \end{itemize}
 
@@ -130,17 +137,40 @@ with Daniel Votipka\\
 %--------------------------------------------------------------------------------
 %    PUBLICATIONS -----------------------------------------------------------------------------------------------
 \begin{rSection}{Publications} 
-  Zachary Grannan, Aurel Bílý, Jonáš Fiala, \textbf{Jasper Geer}, Markus de Medeiros, Peter Müller, and Alexander J. Summers. 2025. \emph{Place Capability Graphs: A General-Purpose Model of Rust’s Ownership and Borrowing Guarantees}. Proc. ACM Program. Lang. 9, OOPSLA2, Article 344 (October 2025), 28 pages. https://doi.org/10.1145/3763122
+  {\it 2026}
+
+  {\em SoK: A Modularized Framework for Symbolic Execution and Application for Usable Tool Design}
+  \\ James Mattei, Andrew Lin, \textbf{Jasper Geer}, Jie Hu, Moritz Schloegel, Tiffany Bao, Daniel Votipka.
+  \\ {\it Secure Development Conference (SecDev)}
+  \\ (To Appear)
+
+  {\it 2025}
+
+  {\em Place Capability Graphs: A General-Purpose Model of Rust’s Ownership and Borrowing Guarantees}
+  \\ Zachary Grannan, Aurel Bílý, Jonáš Fiala, \textbf{Jasper Geer}, Markus de Medeiros, Peter Müller, Alexander J. Summers.
+  \\ {\it Object-oriented Programming, Systems, Languages and Applications (OOPSLA)}
+  \\ \href{https://doi.org/10.1145/3763122}{DOI}
+\end{rSection}
+
+%--------------------------------------------------------------------------------
+%    PREPRINTS -----------------------------------------------------------------------------------------------
+\begin{rSection}{Preprints} 
+  {\em Mason: Type- and Name-Directed Program Synthesis}
+  \\\textbf{Jasper Geer}, Fox Huston, Jeffrey Foster
+  \\ {\it arXiv}
+  \\ \href{https://doi.org/10.48550/arXiv.2602.16981}{DOI}
 \end{rSection}
 
 %--------------------------------------------------------------------------------
 %    AWARDS
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Awards} 
-{\bf Four Year Doctoral Fellowship (4YF)}{, University of British Columbia
+{\bf \href{https://www.grad.ubc.ca/awards/four-year-doctoral-fellowship-4yf}{Four Year Doctoral Fellowship}}{, University of British Columbia
 } \hfill{\em Jan 2026 - Dec 2029}
 
 \end{rSection}
+
+\newpage
 
 %--------------------------------------------------------------------------------
 %    SERVICE
@@ -191,7 +221,6 @@ with Daniel Votipka\\
 \begin{rSection}{Programming Background}
 Recent experience with Rust and Scala.\\
 Previous experience with OCaml, Standard ML, Haskell, Racket, C, and Java.
-\end{itemize}
 \end{rSection}
 
 \end{document}----------------------------
