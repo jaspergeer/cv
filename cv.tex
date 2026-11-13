@@ -47,8 +47,8 @@
 
 \begin{itemize}
     \item Research in Programming Languages and Formal Verification in the UBC Software Practices Lab.
-    \item Primarily interested in Rust verification, separation logic, and type systems.
-    \item Contributor to Prusti, a Rust verifier developed in collaboration with ETH Zurich.
+    \item Interested in Rust verification, separation logic, and type systems.
+    \item Member of the Prusti project, building a deductive Rust verifier in collaboration with ETH Zurich.
 \end{itemize}
 
 %--copy and paste this region  if you need more--
@@ -62,27 +62,28 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Research Experiences}
 %--copy and paste this region  if you need more--
-{\bf Verifying Safe Clients of Interior Mutability} \hfill {\em August 2025 - Present}\\
+{\bf Verifying Safe Clients of Interior Mutability in Rust} \hfill {\em August 2025 - Present}\\
 with Alexander J. Summers\\
 {\it University of British Columbia}
 \begin{itemize}
-    \item Developing formal underpinnings and a soundness proof in separation logic for a verification methodology for safe clients of interior-mutable modules in Rust.
-    \item Exploring extensions to the specification language and proof technique to support a wider range of use cases.
+  \item Developed a specification language for types with interior mutability in Rust and an associated client-side verification methodology.
+  \item In contrast to existing work, our technique can be applied to existing Rust code using existing types, does not require the user to interact with ghost state or resource algebras, and allows idiomatic runtime assertions to be reused as formal specifications.
+  \item Explored formal underpinnings for our technique using Daenerys, an extension of the Iris separation logic framework.
 \end{itemize}
 
 {\bf Place Capability Graphs} \hfill {\em January 2025 - 2025}\\
 with Alexander J. Summers\\
 {\it University of British Columbia}
 \begin{itemize}
-  \item Developed a MIR-level mutation testing tool for the Rust compiler to evaluate the trustworthiness of Place Capabilitiy Graphs, a model of Rust's type checking results.
-  \item Co-author on paper published in OOPSLA 2025.
+  \item Developed a MIR-level mutation testing tool for the Rust compiler to evaluate the trustworthiness of Place Capability Graphs, a model of Rust's type checking results.
+  \item Co-authored a paper published at OOPSLA 2025.
 \end{itemize}
 
 {\bf Type- and Name-Guided Program Synthesis} \hfill {\em September 2023 - September 2025}\\
 with Jeffrey Foster \\
 {\it Tufts University}
 \begin{itemize}
-    \item Implemented and formalized a subtyping constraint-guided program synthesis technique for Java programs.
+    \item Implemented and formalized a subtyping constraint-guided program synthesis technique for Java.
     \item Developed search heuristics to make a larger class of synthesis problems tractable.
 \end{itemize}
 
@@ -93,12 +94,12 @@ with Daniel Votipka\\
 \begin{itemize}
     \item Participated in an extensive review of recent symbolic execution and automated testing literature.
     \item Qualitatively coded rounds of 5-10 research papers and contributed to codebook development.
+  \item Co-authored a paper published at SecDev 2026 which received a distinguished paper award.
 \end{itemize}
 %--copy and paste this region  if you need more--
 \end{rSection}
 
 \newpage
-
 \begin{rSection}{Professional Experiences}
 {\bf Vehicle Software Intern} \hfill {\em May 2023 - August 2023}\\
 \hfill {\it Tesla}
@@ -110,28 +111,6 @@ with Daniel Votipka\\
 \end{itemize}
 \end{rSection}
 
-\begin{rSection}{Teaching}
-{\bf University of British Columbia, Graduate Teaching Assistant} \hfill {\em September 2024 - Present}
-\begin{itemize}
-    \item CPSC411, Compilers. {\it Spring 2024.}
-    \item CPSC311, Definition of Programming Languages. {\it Fall 2024.}
-\end{itemize}
-
-{\bf Tufts University, Teaching Fellow} \hfill {\em January 2024 - May 2024}
-\begin{itemize}
-    \item CS170, Computation Theory. {\it Spring 2024.}
-\end{itemize}
-
-{\bf Tufts University, Course Assistant} \hfill {\em September 2022 - December 2023}
-\begin{itemize}
-    \item CS170, Computation Theory. {\it Fall 2022, Spring 2023, Fall 2023.}
-\end{itemize}
-
-{\bf Coding With Kids} \hfill {\em May 2022 - September 2022}
-\begin{itemize}
-    \item Taught week-long programming classes for primary and secondary school students.
-\end{itemize}
-    
 \end{rSection}
 
 %--------------------------------------------------------------------------------
@@ -166,26 +145,52 @@ with Daniel Votipka\\
 %    AWARDS
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Awards} 
-{\bf \href{https://www.grad.ubc.ca/awards/four-year-doctoral-fellowship-4yf}{Four Year Doctoral Fellowship}}{, University of British Columbia} \hfill{\em 2026 - 2029}
+{\bf \href{https://www.grad.ubc.ca/awards/four-year-doctoral-fellowship-4yf}{Four Year Doctoral Fellowship}}{, UBC (University-Wide)} \hfill{\em 2026 - 2029}
+\begin{itemize}
+  \item \$24,000 CAD stipend + full tuition for 4 years
+\end{itemize}
 
-{\bf Community Building Award}{, UBC Computer Science} \hfill{\em 2025}
+{\bf Community Building Award}{, UBC CS Department} \hfill{\em 2025}
 
 
 \end{rSection}
-
-\newpage
 
 %--------------------------------------------------------------------------------
 %    SERVICE
 %-----------------------------------------------------------------------------------------------
 \begin{rSection}{Service} 
-{\bf Reviewer}{, UBC Computer Science Student Research Conference}\hfill{\em January 2026}\\
-{\bf VP Social}{, UBC Computer Science Graduate Student Association}\hfill{\em May 2025 - April 2026}\\
-{\bf Tuesday Tea Organizer}{, UBC Computer Science Graduate Student Association}\hfill{\em May 2025 - April 2026}\\
+{\bf Student Development Committee}{, UBC CS Graduate Student Association}\hfill{\em May 2026 - Present}\\
+{\bf Reviewer}{, UBC CS Student Research Conference}\hfill{\em 2025, 2026}\\
+{\bf VP Social}{, UBC CS Graduate Student Association}\hfill{\em May 2025 - April 2026}\\
+{\bf Tuesday Tea Organizer}{, UBC CS Graduate Student Association}\hfill{\em May 2025 - April 2026}\\
 {\bf PL Reading Group Organizer}{, UBC Software Practices Lab}\hfill{\em September 2024 - Present}
 
 \end{rSection}
 
+\newpage
+
+\begin{rSection}{Teaching}
+{\bf University of British Columbia, Graduate Teaching Assistant} \hfill {\em September 2024 - Present}
+\begin{itemize}
+    \item CPSC411, Compilers. {\it Spring 2024.}
+    \item CPSC311, Definition of Programming Languages. {\it Fall 2024.}
+\end{itemize}
+
+{\bf Tufts University, Teaching Fellow} \hfill {\em January 2024 - May 2024}
+\begin{itemize}
+    \item CS170, Computation Theory. {\it Spring 2024.}
+\end{itemize}
+
+{\bf Tufts University, Course Assistant} \hfill {\em September 2022 - December 2023}
+\begin{itemize}
+    \item CS170, Computation Theory. {\it Fall 2022, Spring 2023, Fall 2023.}
+\end{itemize}
+
+{\bf Coding With Kids} \hfill {\em May 2022 - September 2022}
+\begin{itemize}
+    \item Taught week-long programming classes for primary and secondary school students.
+\end{itemize}
+    
 % %--------------------------------------------------------------------------------
 % %    PROJECTS
 % %-----------------------------------------------------------------------------------------------
@@ -222,8 +227,8 @@ with Daniel Votipka\\
 %	SKILLS SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Programming Background}
-Recent experience with Rust and Scala.\\
-Previous experience with OCaml, Standard ML, Haskell, Racket, C, and Java.
+Professional/research experience with Rust, Scala, and Haskell.\\
+Some experience with OCaml, Standard ML, C, Java, and Rocq.
 \end{rSection}
 
 \end{document}----------------------------
